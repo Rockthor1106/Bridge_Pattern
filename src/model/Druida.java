@@ -9,12 +9,14 @@ public class Druida {
 	private String apariencia;
 	private String racial;
 	
-	public Druida(String nombre, double vida, double nivel, Raza raza, Transformacion transformacion) {
+	public Druida(String nombre, double vida, double nivel, Raza raza, Transformacion transformacion, String apariencia, String racial) {
 		this.nombre = nombre;
 		this.vida = vida;
 		this.nivel = nivel;
 		this.raza = raza;
 		this.transformacion = transformacion;
+		this.apariencia = apariencia;
+		this.racial = racial;
 	}
 
 	public String getNombre() {
@@ -74,7 +76,7 @@ public class Druida {
 	}
 	
 	public void transformarse() {
-		transformacion.transformarse(nombre);
+		transformacion.transformarse(apariencia,nombre);
 		transformacion.buff();
 	}
 }
