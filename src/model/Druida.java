@@ -6,6 +6,8 @@ public class Druida {
 	private double nivel;
 	private Raza raza;
 	private Transformacion transformacion;
+	private String apariencia;
+	private String racial;
 	
 	public Druida(String nombre, double vida, double nivel, Raza raza, Transformacion transformacion) {
 		this.nombre = nombre;
@@ -53,6 +55,22 @@ public class Druida {
 
 	public void setTransformacion(Transformacion transformacion) {
 		this.transformacion = transformacion;
+	}
+
+	public String getApariencia() {
+		return apariencia;
+	}
+
+	public void setApariencia(String apariencia) {
+		this.apariencia = apariencia;
+	}
+
+	public String getRacial() {
+		return racial;
+	}
+
+	public void setRacial(String racial) {
+		this.racial = racial;
 	}
 	
 	public void transformarse() {
